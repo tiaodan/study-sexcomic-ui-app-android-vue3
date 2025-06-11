@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>离线 Vue 示例</title>
+    <!-- 引入本地 Vue 文件 -->
+    <script src="./part3/vue3/vue.global.js"></script>
+    <!-- 引入 Element Plus 样式 -->
+    <link rel="stylesheet" href="./part3/element-plus/v2.9.7/element.css">
+</head>
+<body>
+    <div id="app">
+        <el-input v-model="inputText" placeholder="输入内容"></el-input>
+        <el-button type="primary" @click="showAlert">点击弹窗</el-button>
+        <p>计数：{{ count }}</p>
+        <el-button type="success" @click="count++">+1</el-button>
+    </div>
+
+    <!-- 引入 Element Plus JS -->
+    <script src="./part3/element-plus/v2.9.7/element.full.js"></script>
+    <script>
+        // 创建 Vue 应用（只创建一次）
+        const { createApp } = Vue;
+        const app = createApp({
+            data() {
+                return {
+                    inputText: '',
+                    count: 0
+                }
+            },
+            methods: {
+                showAlert() {
+                    alert('你输入的内容是：' + this.inputText)
+                }
+            }
+        });
+
+        // 注册 Element Plus 组件（示例注册 ElInput 和 ElButton）
+        app.component('ElInput', ElementPlus.ElInput);
+        app.component('ElButton', ElementPlus.ElButton);
+
+        app.mount('#app');
+    </script>
+</body>
+</html>

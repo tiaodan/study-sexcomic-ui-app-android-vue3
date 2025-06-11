@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>离线 Vue 表格示例</title>
+    <!-- 引入 Vue3 -->
+    <script src="./part3/vue3/vue.global.js"></script>
+    <!-- 引入 Element Plus -->
+    <script src="./part3/element-plus/v2.9.7/element.full.js"></script>
+    <link rel="stylesheet" href="./part3/element-plus/v2.9.7/element.css">
+</head>
+<body>
+    <div id="app">
+        <el-table :data="tableData" style="width: 100%">
+            <el-table-column prop="date" label="日期" width="180"></el-table-column>
+            <el-table-column prop="name" label="姓名" width="180"></el-table-column>
+            <el-table-column prop="address" label="地址"></el-table-column>
+        </el-table>
+    </div>
+    
+    <script>
+        const { createApp } = Vue;
+        
+        // 初始化 Vue 应用
+        const app = createApp({
+            data() {
+                return {
+                    tableData: [
+                        { date: '2024-01-01', name: '张三', address: '北京' },
+                        { date: '2024-01-02', name: '李四', address: '上海' }
+                    ]
+                };
+            }
+        });
+
+        // 注册 Element Plus 表格组件
+        app.component('ElTable', ElementPlus.ElTable);
+        app.component('ElTableColumn', ElementPlus.ElTableColumn);
+
+        app.mount('#app');
+    </script>
+</body>
+</html>

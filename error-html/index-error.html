@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>离线 Vue 示例</title>
+    <!-- 引入本地 Vue 文件 -->
+    <script src="./part3/vue3/vue.global.js"></script>
+    <!-- 引入本地 elment-plus 文件 -->
+    <link rel="stylesheet" href="./part3/element-plus//v2.9.7/element.css">
+</head>
+<body>
+    <!-- 写法错误的创建app方式 -->
+    <div id="app">{{ message }}</div>
+
+    <script src="./part3/element-plus/v2.9.7/element.full.js"></script>
+    <script>
+        // 创建 Vue 应用
+        const { createApp } = Vue;
+        createApp({
+            data() {
+                return {
+                    message: "Hello Vue (离线版)!"
+                }
+            }
+        }).mount('#app');
+
+        // 创建 Element Plus 应用
+        // 手动注册组件（仅示例）
+        const { ElButton } = ElementPlus;
+        app.component(ElButton.name, ElButton);
+
+        // const app = Vue.createApp({}); // 与const { createApp } = Vue; 冲突, 会报错: index.html:30 Uncaught ReferenceError: Cannot access 'app' before initialization at index.html:30:9
+        app.mount('#app');
+    </script>
+</body>
+</html>
+
