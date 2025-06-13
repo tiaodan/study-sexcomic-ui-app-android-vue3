@@ -52,6 +52,9 @@
 # v1.0.0.1
 - 解决状态栏文字颜色，安装capytitor statusbar模块就行
 
+# v1.0.0.2
+- 修改excel甘特图-敏捷甘特图
+
 -------- 压缩node_moudles 再上传github  ---------
 
 待办:
