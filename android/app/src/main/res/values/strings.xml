@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">sexcomic</string>
+    <string name="title_activity_main">sexcomic</string>
+    <string name="package_name">com.study.ui_sexcomic</string>
+    <string name="custom_url_scheme">com.study.ui_sexcomic</string>
+</resources>
