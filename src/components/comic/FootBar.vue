@@ -9,8 +9,8 @@
     <van-tabbar v-model="active" >
       <van-tabbar-item icon="home-o" name="home" to="/home">首页</van-tabbar-item>
       <van-tabbar-item icon="search" name="search" to="/search">搜索</van-tabbar-item>
-      <van-tabbar-item icon="friends-o" name="friends" to="/friend">朋友</van-tabbar-item>
-      <van-tabbar-item icon="setting-o" name="settings" to="/setting">设置</van-tabbar-item>
+      <van-tabbar-item icon="notes-o" name="bookshelf" to="/bookshelf">书架</van-tabbar-item>
+      <van-tabbar-item icon="setting-o" name="setting" to="/setting">设置</van-tabbar-item>
     </van-tabbar>
   </div>
 </template>
@@ -18,7 +18,7 @@
 <script setup>
 import { ref } from 'vue'
 
-const active = ref("home")
+const active = ref('home')
 </script>
 
 

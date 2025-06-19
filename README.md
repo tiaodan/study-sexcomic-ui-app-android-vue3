@@ -1,6 +1,6 @@
-学习: 使用vue3+element-plus开发前端网站
+学习: 使用vue3+vant html 开发安卓app
 
-# 安装vue3+elementplus教程
+# 安装vue3+vant教程
 1.下node，windows版本，双击安装。用加入环境变量？
 2.下开发工具。vs code
 3.下载谷歌浏览器，作为开发环境
@@ -13,6 +13,6 @@ npm create vue3@latest
 npm install
 npm run dev
 
-# 安装element-plus
-1.npm install element-plus --save
+# 安装vant
+1.npm install vant
 2.导入
