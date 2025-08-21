@@ -1,0 +1,11 @@
+{
+  "ad": {
+    "url": "https://d2tjd77zongpix.cloudfront.net/sexcomic/adimg/startad_default_home.webp",  
+    "link": "https://mobile.yangkeduo.com/goods.html?ps=LZ9cNKTbtD",
+    "version": "2_20250602"
+  },
+  "users": [
+    { "id": 1, "username": "zhangsan", "password": "123456", "token": "abcdefg123456" },
+    { "id": 2, "username": "lisi", "password": "123456", "token": "abcdefg123456" }
+  ]
+}

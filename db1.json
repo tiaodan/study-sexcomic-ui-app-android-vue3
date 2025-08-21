@@ -1,0 +1,183 @@
+{
+  "ad": {
+    "url": "https://d2tjd77zongpix.cloudfront.net/sexcomic/adimg/1.webp",
+    "link": "https://mobile.yangkeduo.com/goods.html?ps=LZ9cNKTbtD",
+    "version": "1_20250601"
+  },
+  "users": [
+    {
+      "id": 1,
+      "username": "zhangsan",
+      "password": "123456",
+      "token": "abcdefg123456"
+    },
+    {
+      "id": 2,
+      "username": "lisi",
+      "password": "123456",
+      "token": "abcdefg123456"
+    }
+  ],
+  "shelfComicList": [
+    {
+      "name": "name1",
+      "cover": "https://fastly.jsdelivr.net/npm/@vant/assets/apple-1.jpeg"
+    },
+    {
+      "name": "name2", 
+      "cover": "https://fastly.jsdelivr.net/npm/@vant/assets/apple-2.jpeg"
+    },
+    {
+      "name": "name3",
+      "cover": "https://fastly.jsdelivr.net/npm/@vant/assets/apple-3.jpeg"
+    },
+    {
+      "name": "name4",
+      "cover": "https://fastly.jsdelivr.net/npm/@vant/assets/apple-4.jpeg"
+    },
+    {
+      "name": "name5", 
+      "cover": "https://fastly.jsdelivr.net/npm/@vant/assets/apple-5.jpeg"
+    },
+    {
+      "name": "name6",
+      "cover": "https://fastly.jsdelivr.net/npm/@vant/assets/apple-6.jpeg"
+    },
+    {
+      "name": "name7",
+      "cover": "https://fastly.jsdelivr.net/npm/@vant/assets/apple-7.jpeg"
+    },
+    {
+      "name": "name8", 
+      "cover": "https://fastly.jsdelivr.net/npm/@vant/assets/apple-8.jpeg"
+    },
+    {
+      "name": "name9",
+      "cover": "https://fastly.jsdelivr.net/npm/@vant/assets/apple-1.jpeg"
+    }
+  ],
+  "chapterImgs": [
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748986850.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748986841.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748986888.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748986818.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748986968.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748986980.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748986983.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748986940.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/17374898695.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748986935.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748987094.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748987027.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748987036.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748987049.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748987128.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/17374898715.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/17374898717.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748987116.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748987187.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748987274.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748987299.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748987288.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748987272.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748987228.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748987386.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748987310.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748987341.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748987316.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/173748987391.jpg"
+    },
+    {
+      "img": "https://img.ymmh01.top/cartoon-content/1267/12/17374898734.jpg"
+    }
+  ],
+  "rank":[
+    { "title": "第1项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"},
+    { "title": "第2项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"},
+    { "title": "第3项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"},
+    { "title": "第4项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"},
+    { "title": "第5项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"},
+    { "title": "第6项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"},
+    { "title": "第7项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"},
+    { "title": "第8项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"},
+    { "title": "第9项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"},
+    { "title": "第10项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"},
+    { "title": "第11项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"},
+    { "title": "第12项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"},
+    { "title": "第13项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"},
+    { "title": "第14项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"},
+    { "title": "第15项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"},
+    { "title": "第16项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"},
+    { "title": "第17项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"},
+    { "title": "第18项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"},
+    { "title": "第19项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"},
+    { "title": "第20项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"},
+    { "title": "第21项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"},
+    { "title": "第22项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"},
+    { "title": "第23项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"}
+  ],
+  "rank_week":[
+    { "title": "第1项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"}
+  ],
+  "rank_month":[
+    { "title": "第1项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"},
+    { "title": "第2项", "desc": "这是一段描述信息", "image": "https://img.yzcdn.cn/vant/cat.jpeg"}
+  ]
+}

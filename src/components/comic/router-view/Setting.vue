@@ -1,5 +1,5 @@
-<!-- 第1行，头像、用户名框 -->
 <template>
+  <!-- 第1行，头像、用户名框 -->
   <van-cell-group inset>
     <van-cell :title="username || '未登录'" center>
       <!-- 左侧头像 -->
@@ -13,32 +13,62 @@
         />
       </template>
 
-      <!-- 右侧登录按钮 -->
+      <!-- 右侧登录按钮 :disabled="!!username" -->
+      <!--  :disabled="!!username" 双重取反，把东西（不一定是string）强转成bool -->
       <template #right-icon>
         <van-button
           size="small"
           round
           type="primary"
+          v-if="!loggedIn"
           @click="goLogin"
+          :disabled="!!username"
         >
           登录
         </van-button>
       </template>
     </van-cell>
   </van-cell-group>
+
+  <!-- 我的，其它行 -->
+  <van-cell-group inset styoe="margin-top: 5px">
+    <van-cell v-if="loggedIn" title="退出登录" clickable @click="logout" style="justify-content: center; text-align: center; " />
+  </van-cell-group>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { useRouter } from 'vue-router'
+  // 导入三方
+  import { ref } from 'vue'
+  import { useRouter } from 'vue-router'
 
-const username = ref('') // 模拟未登录
-const router = useRouter()
+  // 导入自己写的
+  import { isLoggedIn } from '@/js/order/shared'
 
-const goLogin = () => {
-  router.push('/setting/login')
-}
+  // 直接在声明时从 localStorage 获取
+  const username = ref(localStorage.getItem('username') || '') 
+  const token = ref(localStorage.getItem('token') || '')
+  const router = useRouter()
+  const loggedIn = ref(isLoggedIn())  // 是否已登录
+  console.log("是否已登录: loggedIn= ", loggedIn.value)
+
+  const goLogin = () => {
+    router.push('/setting/login')
+  }
+
+  // 登出，不能用localStorage.clear() ， 会清除广告相关的缓存
+  const logout = () => {
+    console.log("登出, 清除缓存, username, token")
+    localStorage.removeItem('username')
+    username.value = ''
+    localStorage.removeItem('token')
+    token.value = ''
+
+    console.debug("登出时查看,未修复loogedIn状态,---- 是否已登录: loggedIn= ", loggedIn.value)
+    loggedIn.value = isLoggedIn() // 重新获取 - 是否已登录
+    console.debug("登出时查看,修复loogedIn状态后,---- 是否已登录: loggedIn= ", loggedIn.value)
+  }
 </script>
+
 
 
 <!-- 
@@ -111,4 +141,5 @@ v0.1 写法
 
 <script setup>
 var username = 'UserName'
-</script> -->
+</script> 
+-->

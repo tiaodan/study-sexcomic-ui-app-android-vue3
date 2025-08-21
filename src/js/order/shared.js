@@ -12,6 +12,7 @@ export const loading = ref(false);
 export const total = ref(0);  // 新增总数量
 export const currentPage = ref(1);  // 新增分页页码
 export const pageSize = ref(10);    // 新增每页数量
+export const API_IP = 'https://www.j88d.com/test';
 
 // -------------------- 下拉框常用变量 start --------------------
 // 产品类型: 鼠标：单模、双模、有线等
@@ -116,6 +117,20 @@ export const getOrders = async (page = currentPage.value, size = pageSize.value)
   } finally {
     loading.value = false; // 结束加载
   }
+}
+
+// 封装缓存函数
+// utils/user.js
+export function getUser() {
+  return JSON.parse(localStorage.getItem('username'))
+}
+export function isLoggedIn() {
+  // console.log('isLoggedIn 方法 = ', localStorage.getItem('username'))
+  // console.log('isLoggedIn 方法 = ', !!localStorage.getItem('username'))
+  return !!localStorage.getItem('username')
+}
+export function logout() {
+  localStorage.clear()
 }
 
 

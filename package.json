@@ -1,5 +1,5 @@
 {
-  "name": "study-ui-vue3-element-plus",
+  "name": "study-sexcomic-ui-app-android-vue3",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -12,8 +12,11 @@
     "@capacitor/android": "^7.3.0",
     "@capacitor/cli": "^7.3.0",
     "@capacitor/core": "^7.3.0",
+    "@capacitor/filesystem": "^7.1.1",
     "@capacitor/network": "^7.0.1",
+    "@capacitor/push-notifications": "^7.0.1",
     "@capacitor/status-bar": "^7.0.1",
+    "@squareetlabs/capacitor-navigation-bar": "^1.1.0",
     "axios": "^1.8.4",
     "element-plus": "^2.9.7",
     "vant": "^4.9.19",

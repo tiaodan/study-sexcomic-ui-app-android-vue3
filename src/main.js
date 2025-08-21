@@ -2,18 +2,20 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-// 导入自己写的
-import comicRouter from './js/comic/router.js'  // 导入路由
-
 // 导入第三方
 import 'vant/lib/index.css' // Vant 框架-用于手机 css
 import Vant from 'vant' // Vant 框架-用于手机 js
+import { Lazyload } from 'vant' // Vant 框架-用于手机 图片懒加载
+
+// 导入自己写的
+import comicRouter from './js/comic/router.js'  // 导入路由
 
 // createApp(App).mount('#app')  // 不用这个
 const app = createApp(App)  // !!! 重要。引入App.Vue。界面的主入口
 
 // app管理第三方库
 app.use(Vant)  // 全局导入
+app.use(Lazyload)  // 全局导入, 图片懒加载
 
 // app管理自己写的
 app.use(comicRouter)

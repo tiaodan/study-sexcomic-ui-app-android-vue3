@@ -12,6 +12,8 @@ const routes = [
   { path: '/setting/forget', component: () => import('@/components/comic/router-view/Forget.vue') },  // 忘记密码界面
   { path: '/rank', component: () => import('@/components/comic/router-view/rank/Rank.vue') },  // 排行
   { path: '/rank/list', component: () => import('@/components/comic/router-view/rank/List.vue') },  // 排行 - 右侧列表
+  // 漫画浏览相关
+  { path: '/comic/chapterView', component: () => import('@/components/comic/ChapterView.vue') },  // 漫画浏览界面
   
 
   // 主页面

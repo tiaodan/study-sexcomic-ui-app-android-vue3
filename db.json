@@ -1,0 +1,16 @@
+{
+  "posts": [
+    { "id": 1, "title": "Hello World", "author": "ChatGPT" },
+    { "id": 2, "title": "JSON Server 使用教程", "author": "OpenAI" }
+  ],
+  "comments": [
+    { "id": 1, "body": "Nice article!", "postId": 1 }
+  ],
+  "profile": { "name": "fifrj fjwifwe" },
+  "ad": {
+    "url": "https://d2tjd77zongpix.cloudfront.net/sexcomic/adimg/startad_default_home.webp",  
+    "link": "https://your-ad-link.com",
+    "version": "2_20250620"
+  }
+}
+
