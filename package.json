@@ -18,6 +18,7 @@
     "@capacitor/status-bar": "^7.0.1",
     "@squareetlabs/capacitor-navigation-bar": "^1.1.0",
     "axios": "^1.8.4",
+    "capacitor-plugin-safe-area": "^4.0.2",
     "element-plus": "^2.9.7",
     "vant": "^4.9.19",
     "vue": "^3.5.13",

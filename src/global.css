@@ -1,0 +1,52 @@
+/* 
+全局样式说明：
+  - 可以对z-index: 1000 这种界面 生效。比如：chapterView.vue界面，也能生效
+*/
+* {	
+   /* 隐藏滚动条, 能生效? - 不生效时,可能是内容超出默认高度导致的,跟次配置无关。只有 auto / thin / none 三个值 */
+  scrollbar-width: none; 
+	-ms-overflow-style: none;    /* 隐藏滚动条, 能生效? - 不生效时,可能是内容超出默认高度导致的,跟次配置无关 */
+}
+
+html body { /* 不用:root :root == 等价于 html */
+	background-color: #f8f8f8;    /* 能生效 */
+	width: 100%;   /* 好像有没有都行,那就先加上,以防万一 */
+	height: 100%;  /* 好像有没有都行,那就先加上,以防万一 */
+	
+	/* 自定义全局css变量 */
+	--vant-footbar-height: 50px;    /* vant框架 tabbar 导航栏高度  */
+	--vant-tab-height-line: 44px;   /* vant框架 tab 标签栏高度, line样式  */
+	
+	/* !!!!! 注意:不考虑全局用padding,假如弹窗，遮罩这种也会生效，不好。要在App.vue整体界面，避免安全区 */
+	/*padding-top:    max(env(safe-area-inset-top), var(--safe-area-inset-top));*/  /* 只要main.js 引用此css,就能生效 */
+	/*padding-bottom: max(env(safe-area-inset-bottom), calc(var(--safe-area-inset-bottom) + 50px) ); */ /* 手势条安全区 + footvar高度=50px.只要main.js 引用此css,就能生效 */
+	
+	/* 以下是测试 padding时, 测试的代码,可delete */
+	/*padding-bottom: max(env(safe-area-inset-bottom), var(--safe-area-inset-bottom) ); */
+	/* padding-bottom: 100px; */
+
+	/*overflow: hidden;   禁止 body 滚动 - 对于回弹-不管用*/
+	/*overscroll-behavior-y: none;  禁止回弹 - 对于回弹-不管用 */
+}
+
+
+/* ！！！注意：以下内容，对滚动条隐藏，无效！无效！无效！ delete start ------------------------------------------------------------ */
+/* Webkit (Chrome / Android WebView / iOS WebView) */
+/*
+*::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+*/
+
+/* ✅ Android WebView 特殊处理 */
+/*
+body::-webkit-scrollbar,
+div::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+  display: none !important;
+}
+*/
+
+/* ！！！注意：以上内容，对滚动条隐藏，无效！无效！无效！ delete end   ------------------------------------------------------------ */

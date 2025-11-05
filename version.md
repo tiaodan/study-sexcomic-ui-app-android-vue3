@@ -93,6 +93,31 @@
 - 漫画查看页面，可以隐藏底部手势导航条
 - 章节显示，没做
 
+# v1.0.0.6
+主要内容：
+- 解决：下拉界面，会回弹问题
+
+- 修改App.vue 界面，不用flex布局，用写死高度。因为flex布局，如果内部写了padding，会导致回弹效果
+- 解决问题：父div不设置overflow，子div van-tab固定，tab内容滚动 -》通过设置 父div 固定高度，然后设置子div tab内容 height:100%，overflow-y:auto
+- 解决书名过长, 3列变2列问题。思路：控制max-width。 max-width: calc(100% / var(--grid-column-num));
+- 未根本解决chapterview 隐藏滚动条问题
+  - 问题：全局css 设置了隐藏滚动条
+  - 现象：参考试验结果
+  - 解决：滚动那个div设置了 100vh-1px 生效。100vh 还是会有滚动条
+  -试验 ：
+    - 说明：ChapterView.vue 有2个div。大div-全屏,没设高度。小div-滚动,设高度。小div包裹 image-list
+    - 以下是大div设置高度：
+    - 90vh       -> 不显示滚动条
+    - 95vh       -> 不显示滚动条
+    - 100vh      ->   显示滚动条
+    - 100dvh     ->   显示滚动条
+
+    - 有大div,没有小div,大div高度 = 100vh -1px -> 不显示滚动条，但底部有1px空白
+    - 有大div,  有小div,小div高度 = 100vh -1px -> 不显示滚动条，底部没有1px空白  -》建议用它
+    - 有大div,  有小div,小div高度 = 100vh      -> 显示滚动条
+- 调整目录结构。主框架-》各种项目目录，如comic、audiobook -> footbar对应目录 -> 具体界面实现
+- 全局css 控制 z-index:1000 悬浮的界面，滚动条隐藏
+- 把代码里写死的 px 都改成变量。在全局css里写自定义变量 --xxx
 -------- 压缩node_moudles、android 文件夹后 再上传github  ---------
 
 近期待办：
